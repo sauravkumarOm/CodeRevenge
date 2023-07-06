@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    background:black;
+}
+
+.problemList{
+    display: flex;
+    padding: 45px;
+    padding-left: 83px;
+    justify-content: left;
+    color: #f5f6f7;
+    font-size: large;
+;
+}
+.problemList li{
+    list-style: none;
+    padding-right: 7%;
+    bottom: 60%;
+}
+
+.problem{
+    width: 49%;
+    padding: 38px;
+    padding-left: 1%;
+    padding-top: 1%;
+    right: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.problem a{
+    width: 37%;
+    display: list-item;
+    padding: 15px;
+    padding-left: 3px;
+    list-style: none;
+    color: yellowgreen;
+}
+
+.P1{
+    padding-left: 0%;
+    display: list-item;
+    list-style: none;
+    color: #d1d102;
+
+}
+.P2{
+    padding-left: 0%;
+    display: list-item;
+    list-style: none;
+    color: #1e6801;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+
+}
+.P1:hover{
+    color: red;
+    content: none;
+}
+.P2:hover{
+    color: whitesmoke;
+    content: none;
+}

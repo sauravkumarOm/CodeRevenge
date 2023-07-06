@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style04.css">
+</head>
+
+<body>
+    <nav class="navbar backgroung">
+        <ul class="nav-list">
+            <div class="logo"><img src="code.png" alt=""></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problem.html">Problems</a></li>
+            <li><a href="contest.html">Contests</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="Type to search" />
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+    </nav>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+    <section class="background firstSection">
+        <div class="coin">
+            <div class="A">
+                <p class="text03">
+                    <br>
+                    <br>
+                    A. Coins
+                    <br>
+                    time limit per test: 2 seconds
+                    <br>
+                    memory limit per test: 256 megabytes
+                    <br>
+                    <br>
+                </p>
+                <p class="text04">
+                    <br>
+                    <br>
+                    In Berland, there are two types of coins, having denominations of 2
+                    and k burles.
+                    <br>
+                    Your task is to determine whether it is possible to represent n
+                    burles in coins, i. e. whether there exist non-negative integers x
+                    and y
+                    such that 2⋅x+k⋅y=n.
+                    <br>
+                    <br>
+                    Input
+                    <br>
+                    <br>
+                    The first line contains a single integer t
+                    (1≤t≤104) — the number of test cases.
+                    <br>
+                    <br>
+                    The only line of each test case contains two integers n
+                    and k (1≤k≤n≤1018; k≠2).
+                    <br>
+                    <br>
+                    Output
+                    <br>
+                    <br>
+                    For each test case, print YES if it is possible to represent n
+                    burles in coins; otherwise, print NO. You may print each letter in any case (YES, yes, Yes will all
+                    be recognized as positive answer, NO, no and nO will all be recognized as negative answer).
+                    <br>
+                    <br>
+                    Exmaple:
+                    <br>
+                    <br>
+                    Input:
+                    <br>
+                    <br>
+                    4 <br>
+                    5 3 <br>
+                    6 1 <br>
+                    7 4 <br>
+                    8 8 <br><br>
+                    Output:
+                    <br>
+                    <br>
+                    YES <br>
+                    YES<br>
+                    NO<br>
+                    YES<br><br>
+                    Note <br><br>
+                    In the first test case, you can take one coin with denomination 2
+                    and one coin with denomination k=3.
+                    <br><br>
+                    In the second test case, you can take three coins with denomination 2
+                    . Alternatively, you can take six coins with denomination k=1.
+                    <br><br>
+                    In the third test case, there is no way to represent 7
+                    burles.
+                    <br><br>
+                    In the fourth test case, you can take one coin with denomination k=8.
+                    <br><br>
+
+
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style04.css">
+</head>
+
+<body>
+    <nav class="navbar backgroung">
+        <ul class="nav-list">
+            <div class="logo"><img src="code.png" alt=""></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problem.html">Problems</a></li>
+            <li><a href="contest.html">Contests</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="Type to search" />
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+    </nav>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+    <section class="background firstSection">
+        <div class="coin">
+            <div class="A">
+                <p class="text03">
+                    <br>
+                    <br>
+                    C.Ranom Numbers
+                    <br>
+                    time limit per test: 2 seconds
+                    <br>
+                    memory limit per test: 256 megabytes
+                    <br>
+                    <br>
+                </p>
+                <p class="text04">
+                    <br>
+                    <br>
+                    No, not "random" numbers.
+
+                    <br>
+                    <br>
+                    Ranom digits are denoted by uppercase Latin letters from A to E. Moreover, the value of the letter A is 1, B is 10, C is 100, D is 1000, E is 10000.
+                    <br><br>
+                    A Ranom number is a sequence of Ranom digits. 
+                    The value of the Ranom number is calculated as follows: the values of all digits are summed up, 
+                    but some digits are taken with negative signs: a digit is taken with negative sign if there is a digit with a strictly greater value 
+                    to the right of it (not necessarily immediately after it); otherwise, that digit is taken with a positive sign.?
+                    <br><br>
+                    For example, the value of the Ranom number DAAABDCA is 1000−1−1−1−10+1000+100+1=2088.
+                    <br><br>
+                    You are given a Ranom number. You can change no more than one digit in it. Calculate the maximum possible value of the resulting number.
+                    <br><br>
+                    Input
+                    <br>
+                    <br>
+                    The first line contains a single integer t(1≤t≤10^6) — the number of test cases.
+                    <br>
+                    <br>
+                    The only line of each test case contains a string s(1≤|s|≤2⋅10^5) consisting of uppercase Latin letters from A to E — the Ranom number you are given.
+                    <br>
+                    <br>
+                    The sum of the string lengths over all test cases does not exceed 2⋅10^5.
+                    <br>
+                    <br>
+                    Output
+                    <br>
+                    <br>
+                    For each test case, print a single integer — the maximum possible value of the number, if you can change no more than one digit in it.
+                    <br>
+                    <br>
+                    Exmaple:
+                    <br>
+                    <br>
+                    Input:
+                    <br>
+                    <br>
+                    4 <br>
+                    DAAABDCA <br>
+                    AB <br>
+                    ABCDEEDCBA <br>
+                    DDDDAAADDABECD <br>
+                    <br>
+                    Output:
+                    <br>
+                    11088 <br>
+                    10010 <br>
+                    31000 <br>
+                    15886 <br> <br>
+                    Note <br><br>
+                    In the first example, you can get EAAABDCA with the value 10000−1−1−1−10+1000+100+1=11088. <br> <br>
+                    In the second example, you can get EB with the value 10000+10=10010.
+
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
